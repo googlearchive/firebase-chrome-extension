@@ -1,0 +1,23 @@
+{
+  "name": "Firebase Sample Extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Firebase Sample extension.",
+  "homepage_url": "https://github.com/firebase/firebase-chrome-extension",
+  /* This sample uses firebaseio-demo.com but for production apps using a firebaseio.com Firebase, you won't need that. */
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com https://*.firebaseio-demo.com; object-src 'self'",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "browser action",
+    "default_popup": "src/browser_action/browser_action.html"
+  }
+}
