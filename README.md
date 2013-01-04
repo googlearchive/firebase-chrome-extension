@@ -14,11 +14,14 @@ Using Firebase in an Extension
 The key to using Firebase in a Chrome extension is adding the following content security policy to your manifest.json:
 
 ```json
-  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
+{
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
+}
 ```
 
 Note that:
-1. You must use the wildcard (https://*.firebaseio.com not https://yourfirebase.firebaseio.com), since internally Firebase may need to connect to other subdomains.
+
+1. You must use the wildcard domain (https://*.firebaseio.com not https://yourfirebase.firebaseio.com), since internally Firebase may need to connect to other subdomains.
 2. You must use https:// when including firebase.js and when referencing any Firebase URLs, since Chrome extensions don't allow http script includes.
 
 Once you've done that, you can use Firebase just as you would in any other web app.  See our [Getting Started](https://www.firebase.com/docs/) guide for details.
