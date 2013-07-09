@@ -6,7 +6,7 @@ Extension Usage
 -----
 Installing the extension adds an icon next to the chrome address bar, which when clicked opens a popup that displays the number of times the icon has been clicked (by all users of the extension).
 
-![Screenshot](http://firebase.github.com/external_images/firebase-chrome-extension.png)
+![Screenshot](http://firebase.github.io/external_images/firebase-chrome-extension.png)
 
 
 Using Firebase in an Extension
