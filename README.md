@@ -13,6 +13,16 @@ Using Firebase in an Extension
 ------------------------------
 The key to using Firebase in a Chrome extension is adding the following content security policy to your manifest.json:
 
+for development:
+
+```json
+{
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com https://*.firebaseio-demo.com; object-src 'self'",
+}
+```
+
+for production:
+
 ```json
 {
   "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
