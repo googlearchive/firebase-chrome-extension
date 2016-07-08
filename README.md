@@ -1,6 +1,9 @@
+This sample is deprecated. For a Firebase v3.x sample see: https://github.com/firebase/quickstart-js/tree/master/auth/chromextension
+===================
+
 Firebase Sample Chrome Extension
 ================================
-This is a demonstration of using Firebase in a Chrome extension.
+This is a demonstration of using Firebase in a Chrome extension with Firebase v2.x .
 
 Extension Usage
 -----
